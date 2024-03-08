@@ -8,6 +8,7 @@ import Popeye from "./Popeye";
 import DefaultProfile from "./DefaultProfile";
 import ErrorPage from "./ErrorPage";
 import './index.css'
+import Router from "./Router";
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Router />
   </React.StrictMode>
 );
