@@ -21,6 +21,9 @@ function Router(){
         {
             path:'catalog',
             element: <Catalog />,
+            children: [
+                
+            ]
         },
     ])
 
