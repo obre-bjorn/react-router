@@ -10,7 +10,7 @@ const Catalog = () => {
         <div className="container">
             <h1>Catalog</h1>
             {items.map( item => 
-                <Link key={item} to={`${item}`}>Item {item}</Link>
+                <Link key={item} to={item}>Item {item}</Link>
             )}
             <Outlet />
         </div>

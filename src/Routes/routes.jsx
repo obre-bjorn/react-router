@@ -2,7 +2,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Homepage from './Homepage'
 import Catalog from "./Catalog";
+import Employees from "./Employees";
 import Item from "./Item";
+import Employee from "./Employee";
 import ErrorPage from "./errorPage"
 
 
@@ -15,15 +17,22 @@ function Router(){
             errorElement: <ErrorPage/>
         },
         {
+            path: 'employees',
+            element: <Employees/>,
+            children: [
+                {
+                    path:':empId',
+                    element: <Employee/>
+                }
+            ]
+        },
+        {
             path: 'catalog/:itemId',
             element: <Item/>,
         },
         {
             path:'catalog',
             element: <Catalog />,
-            children: [
-                
-            ]
         },
     ])
 

@@ -14,6 +14,9 @@ const Homepage = () => {
           <li>
             <Link to={`catalog`}>Catalog</Link>
           </li>
+          <li>
+             <Link to={`employees`}>Look at Our Employees</Link>
+          </li>
         </ul>
       </nav>
     </div>
